@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ITbusiness Report</title>
+  <!-- PCのスタイル -->
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <!-- スマホ専用のスタイル -->
+  <link rel="stylesheet" href="mobile.css" type="text/css" media="screen and (max-width: 768px)" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PLEH81X84D"></script>
+  <script src="https://kit.fontawesome.com/b81d0086b5.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+  <meta name="robots" content="noindex,follow" />
+</head>
+
+<body>
+  <header></header>
+  <main class="main">
+    <div class="main_container">
+      <!-- <div id="c_top" class="c_top"><iframe src="./manual.html"</div> -->
+      <div id="c_top" class="c_top">
+        <div class="bg_common bg_top">
+          <div id="HomeHeaderTitle2">
+              <img width="120%" src="img/home_img/小見出しを追加-removebg-preview.png" />
+            </div>
+          <!--ここから変更-->
+          <header id="KindaiHeader">
+            <div id="KindaiHeaderLogo">
+              <a href="./">
+                <img id="slack_logo" src="img/logo/f906ac08-790d-459c-bbb1-7a7723e0a487_00001_.png" alt="Slack logo" />
+              </a>
+            </div>
+
+            <div id="HeaderRightList">
+              <div id="HeaderRightListContainer">
+                <div class="menu-wrapper">
+                  <ul id="HeaderMenu">
+                    <li class="HeaderMenuLists">
+                      <a href="#getting_started" type="button" class="header_right_list_button">
+                        <span class="header_right_list_button_number">A</span>
+                        <span class="header_right_list_button_title">課題の着眼点</span>
+                      </a>
+                    </li>
+                    <li class="HeaderMenuLists">
+                      <a href="#practices" type="button" class="header_right_list_button">
+                        <span class="header_right_list_button_number">B</span>
+                        <span class="header_right_list_button_title">インサイトの発見</span>
+                      </a>
+                    </li>
+                    <li class="HeaderMenuLists">
+                      <a href="#experience_design" type="button" class="header_right_list_button">
+                        <span class="header_right_list_button_number">C</span>
+                        <span class="header_right_list_button_title">体験のデザイン</span>
+                      </a>
+                    </li>
+                    <li class="HeaderMenuLists">
+                      <a href="#video" type="button" class="header_right_list_button">
+                        <span class="header_right_list_button_title">プロトタイプ動画</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div id="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check" />
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+              </div>
+            </div>
+
+            <div id="popup_menu">
+              <!-- <img class="popup_kindai" width="220" height="70" src="img/logo/kindai_logo.jpeg" alt="KINDAI University" /> -->
+            </div>
+          </header>
+
+          <div id="HomeHeaderImg"></div>
+
+          <div class="contents">
+            <div id="HomeHeaderTitle">
+              <img width="30%" src="img/home_img/bg.png" />
+            </div>
+          </div>
+          <div id="HomeHeaderNews">
+            <p class="news">成果物</p>
+            <div class="marquee">
+              <a href="#video" class="marquee_text">このアプリ作成に1ヶ月かかりました…</a>
+            </div>
+          </div>
+
+
+          <div class="square">
+            <p>⚠️スクロールすると表示されるカードをクリックして内容を確認</p>
+          </div>
+        </div>
+        <!--ここまで-->
+        <!-- <div class="key_msg">
+          <div id="key_msg_img1"></div>
+          <div id="key_msg_img2"></div>
+        </div> -->
+        <div class="HomeMainContents">
+          <div id="getting_started" class="home_main_chapter">
+            <div id="c_01" class="chapter">
+              <div class="bg_common bg_chatbot"></div>
+              <a onclick="showPopup1()">
+                <img src="./img/menu_card/chatbot_card.png" id="curve_img" class="curve_animation" />
+              </a>
+            </div>
+            <div class="circle_number">A</div>
+            <h1>課題の着眼点</h1>
+          </div>
+
+          <div id="popup1" class="overlay" onclick="closePopup1()">
+            <div class="popup p01" onclick="event.stopPropagation()">
+              <a class="close" onclick="closePopup1()">&times;</a>
+              <h2 class="popup_menu_title">設問A</h2>
+              <h1>課題の着眼点</h1>
+              <div class="content content1">
+                <div class="line"></div>
+
+                <div class="content_txt txt01_2">
+                  ①最近気づいた、身の回りの意外に不便なことを詳しく説明してください。
+                </div>
+
+                <div class="answer_box">
+                  <h3 class="answer_title" style="font-size: larger;">A.</h3>
+                  <p>
+                  <p class="highlight-underline">「大学生活に必要な情報を得るには、複数のアプリやサイトを使い分けなければならない。」</p><br>
+
+                  例えば、大学のシステム（UNIPA）は使い勝手が悪く、以下のような工夫をしながら日々対応している。<br>
+                  ・卒業までに必要な単位数が表示されないため、自分で手計算して履修登録を行っている<br>
+                  （例：共通教養科目があと何単位必要か、外国語科目が何単位残っているかなど）<br>
+                  ・授業ごとにテストや課題の情報を登録できる機能がなく、現在はメモ帳アプリなどに手動でまとめて管理している<br>
+                  （「すごい時間割」など一部のアプリでは登録機能はあるものの、検索機能がないため情報を探しづらく、テストと課題を両方登録すると一覧表示で混ざってしまい、かえって混乱する。さらに、シラバス表示機能もないため、UNIPAと行き来する必要がある。）<br>
+                  ・セメスターごとに履修できる授業を確認できず、履修登録時は「履修要項」を毎度確認しなければならない<br>
+                  ・シラバス閲覧は外部サイトに飛ばされ、そのサイトでも検索手順が複雑で時間がかかる<br><br>
+
+                  上記で挙げた例以外にも、通学時には天気を確認したり、電車の遅延情報をチェックした上で別サイトから遅延証明書を取得しなければならなかったり、目的ごとに使用するサービスを切り替える手間がある。<br><br>
+
+                  このように、大学生活に必要な情報はさまざまなツールを行き来しなければならない。
+                  </p>
+                  <div style="text-align:center;">
+                    <img width="300" src="./img/iOS/task.png" />
+                  </div>
+                </div>
+
+                <div class="content_txt txt01_3">
+                  ②その不便なことを解決して便利にする方法を考えてください。
+                </div>
+                <div class="answer_box">
+                  <h3 class="answer_title" style="font-size: larger;">A.</h3>
+                  <p>
+                  <p class="highlight-underline">「時間割、シラバス、単位情報確認、電車乗換、遅延証明書など、大学生活に関わるさまざまな情報を一元的に管理できるアプリケーションを作成する。」
+                  </p><br>
+                  このアプリを活用することで、従来は複数のサービスやサイトを行き来していた情報確認を1つのプラットフォーム上で完結させ、①で挙げた不便さを解決する。<br>
+
+                  </p>
+                  <div style="text-align:center;">
+                    <img width="300" src="./img/iOS/anwer.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div id="practices" class="home_main_chapter">
+            <div id="c_02" class="chapter">
+              <div class="bg_common bg_manual"></div>
+              <a onclick="showPopup2()">
+                <img src="./img/menu_card/manual_card.png" class="curve_animation" />
+              </a>
+            </div>
+            <div class="circle_number">B</div>
+            <h1>インサイトの発見</h1>
+          </div>
+
+          <div id="popup2" class="overlay" onclick="closePopup2()">
+            <div class="popup" onclick="event.stopPropagation()">
+              <h2 class="popup_menu_title">設問B　</h2>
+              <h1>インサイトの発見</h1>
+              <a class="close" onclick="closePopup2()">&times;</a>
+              <div class="content content2">
+                <div class="line"></div>
+                <div class="content_txt txt01_2">
+                  ①対象とする友人・家族等3人以上へインタビューまたは観察を実施し、最近あったちょっと不便なことや最近気付いた課題と、あなたのAで考えたのと同じ不便さがあるか等を聞き出したり発見したりしてください。
+
+                  <!-- 質問内容 -->
+                  <ol>
+                    <li>最近あったちょっと不便なことや、最近気付いた課題を教えてください。</li>
+                    <li>その不便さを解決するために、何か工夫していることはありますか？</li>
+                    <li>「大学生活に必要な情報を得るには、複数のアプリやサイトを使い分けなければならない」といった不便さを感じたことはありますか？</li>
+                  </ol>
+
+                  <!-- 回答者1人目 -->
+                  <div class="use_scene">
+                    <h3>Aさん（情報学部2年・男性）</h3>
+                    <ul class="teacher_use">
+                      <li><i
+                          class="fa-solid fa-comments first-reason"></i>楽器を演奏する際に、楽譜が用意されていない曲があり、指使いを人に聞いて覚えるのが手間。毎回メモを取るのも大変。
+                      </li>
+                      <li><i class="fa-solid fa-comments"></i>解決するために声に出して録音し、あとから聞き返すことで記憶するようにしている。</li>
+                      <li><i class="fa-solid fa-comments"></i>「大学生活の情報がバラバラに管理されている不便さ」は感じたことがあると回答。</li>
+                    </ul>
+                    <div style="text-align:center;">
+                      <img width="900" src="./img/iOS/interview1.png" />
+                    </div>
+                  </div>
+                  <h3>Bさん（情報学部2年・男性）</h3>
+                  <ul class="student_use">
+                    <li><i class="fa-solid fa-comments"></i>定期券ICカードが2枚あり、2枚とも水色に青文字で見分けづらく間違えることがある。</li>
+                    <li><i class="fa-solid fa-comments"></i>しっかり見るようにしているが、見間違えることもあるため半ば諦めている。</li>
+                    <li><i class="fa-solid fa-comments"></i>「大学生活の情報がバラバラに管理されている不便さ」は感じたことがあると回答。</li>
+                  </ul>
+                  <div style="text-align:center;">
+                    <img width="900" src="./img/iOS/interview2.png" />
+                  </div>
+                  <h3>Cさん（情報学部2年・男性）</h3>
+                  <ul class="student_use">
+                    <li><i class="fa-solid fa-comments"></i> 新紙幣が自販機や駐車場で使えず、不便。以前、新紙幣しかなくて駐車場から出られなくなりかけた。</li>
+                    <li><i class="fa-solid fa-comments"></i> 小銭や旧紙幣を持ち歩くようにしているが、荷物が増えるためあまりよくないと感じている。</li>
+                    <li><i class="fa-solid fa-comments"></i> 「大学生活の情報がバラバラに管理されている不便さ」は「とてもある」と答えており、同じような不便さを強く感じている。
+                    </li>
+                  </ul>
+                  <div style="text-align:center;">
+                    <img width="900" src="./img/iOS/interview3.png" />
+                  </div>
+                  <h3>Dさん（社会人・女性）</h3>
+                  <ul class="student_use">
+                    <li><i class="fa-solid fa-comments"></i> オンライン講座（eラーニング）の動画再生速度が変えられず、メモが追いつかずに学習が非効率。</li>
+                    <li><i class="fa-solid fa-comments"></i> 一時停止や巻き戻しを使って対応しているが、結果的に学習時間が倍になる。</li>
+                    <li><i class="fa-solid fa-comments"></i>「大学生活の情報がバラバラに管理されている不便さ」は感じたことがあると回答。</li>
+                  </ul>
+                  <div style="text-align:center;">
+                    <img width="900" src="./img/iOS/interview4.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="content_txt txt01_2">
+                ②全インタビューや観察記録を整理し、あなたの周囲の人間に見られる不便さや課題の本質(潜在ニーズ)をコンセプトとして表現してください。
+              </div>
+              <div class="concept-box">
+                <h2>【コンセプト（潜在ニーズの表現）】</h2>
+                <p style="color:red; font-size: larger;">「複数の情報源や手段を意識せずとも、必要な情報にすぐアクセスしたい」</p>
+                <p>観察・インタビュー結果から共通して見えてきたのは、「必要な情報や行動が複数の手段・媒体に分散しているため、頭の中で整理したり、都度操作するのが面倒でストレスになる」という点です。</p>
+                <ul style="text-align:left;">
+                  <li>楽器の演奏で、口頭情報を記憶→メモ→確認という手順が必要で、整理が大変</li>
+                  <li>ICカードの見分けが直感的でなく、毎回集中して確認する必要がある</li>
+                  <li>紙幣の種類と対応機器を意識してお金を持ち歩く必要がある</li>
+                  <li>eラーニングで、動画の再生スピードを自分で管理し、情報を整理して記録するのに手間がかかる</li>
+                  <li>大学生活では時間割・課題・単位・シラバス・通学情報などを複数のアプリで管理しなければならず、それぞれに都度アクセスする必要がある</li>
+                </ul>
+                <p>こうした事例の背景には共通して、「情報やツールがバラバラで、ユーザー側が自分で管理・統合・判断しなければならない」という不便さがあります。<br>
+                  つまり、<span class="highlight">「情報や操作の煩雑さを解消し、直感的にアクセスしたい」</span>という潜在ニーズが浮かび上がります。</p>
+              </div>
+              <div class="content_txt txt02_3">
+                ③上記分析にサービスデザインのツールを複数用いなさい。
+              </div>
+              <div style="text-align:center;">
+                <div class="journey-map-label">カスタマージャーニーマップ</div>
+                <img width="100%" src="./img/iOS/サービスデザイン1.png" alt="カスタマージャーニーマップ" />
+              </div>
+
+              <div style="text-align:center;">
+                <div class="user-test-label">ユーザーテスト</div>
+                <img width="400" src="./img/iOS/サービスデザイン2.png" alt="ユーザーテスト" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="experience_design" class="home_main_chapter">
+        <div id="c_03" class="chapter">
+          <div class="bg_common bg_utilization"></div>
+          <a onclick="showPopup3()">
+            <img src="./img/menu_card/背景_を_削除 プロジェクト (2).png" class="curve_animation" />
+          </a>
+        </div>
+        <div class="circle_number">C</div>
+        <h1>体験のデザイン</h1>
+      </div>
+
+      <div id="popup3" class="overlay" onclick="closePopup3()">
+        <div class="popup" onclick="event.stopPropagation()">
+          <h2 class="popup_menu_title">設問C　</h2>
+          <h1>体験のデザイン</h1>
+          <a class="close" onclick="closePopup3()">&times;</a>
+          <div class="content content3">
+            <div class="line"></div>
+            <div class="content_txt txt01_2">
+              ①設問Bを元に、あなたがインタビューした全員の内容に共通する、顕在化していない課題の本質を言い当て、それぞれの例を出し、面白く解決するアイデアを考えなさい。
+            </div>
+            <div class="card improved-card">
+              <h2>【課題の本質】</h2>
+              <p>
+                本来システムやツールが解決すべきことを、ユーザー自身が
+                <strong>「覚える・メモする・使い分ける・確認する」</strong>
+                などの手間で補っており、それが蓄積されてストレスや非効率を生んでいます。<br>多くの人が「仕方ない」と受け入れてしまっている状況です。
+              </p>
+              <p>
+                つまり、人は生活の中で無意識に
+                <span class="highlight">「分散された情報や操作の管理者」</span>
+                になってしまっています。
+              </p>
+
+              <h3>【具体例とその対応】</h3>
+              <ul class="example-list">
+                <li>
+                  <strong>楽器のメモ管理：</strong>
+                  AIが演奏内容を自動で楽譜化し、スマホで再生できるアプリ作成
+                </li>
+                <li>
+                  <strong>ICカードの見分け：</strong>
+                  用途ごとに自動で色が変わる
+                  <em>「ICナビタグ付きカードケース」</em>
+                </li>
+                <li>
+                  <strong>新紙幣トラブル：</strong>
+                  搭載されたセンサーが支払い機器と連携して、
+                  <em>支払い方法を表示する財布</em>
+                </li>
+                <li>
+                  <strong>eラーニング：</strong>
+                  要点をAIが字幕＋ノート化し、一括で見返せる
+                  <em>「学習まとめプレイヤー」</em>
+                </li>
+              </ul>
+
+              <h3>【解決アイデア（大学生活編）】</h3>
+              <p class="app-title">
+                <strong>「大学生活統合アプリ」</strong> ー すべての情報を一つに。管理ストレスをゼロへ。
+              </p>
+              <ul class="app-features">
+                <li>時間割・課題・テスト・履修・単位進捗を自動で集計・表示</li>
+                <li>シラバスをアプリ内で検索・閲覧可能</li>
+                <li>UNIPAなど学内システムと連携して情報を自動取得</li>
+                <li>遅延情報・天気・証明書リンクなどもワンタップ表示</li>
+                <li>学生一人ひとりに合わせて、必要な情報だけを整理・提示</li>
+              </ul>
+              <p>
+                このアプリがあれば、学生は情報を「探しに行く」必要がなくなり、
+                <strong>“使うだけ”の環境</strong>へと変わります。
+              </p>
+            </div>
+
+            <!-- Dさんのフィードバック（縦並び） -->
+            <div class="content_txt txt01_2">
+              ②アイデアから課題例を解決する体験をデザインし、プロトタイプを作成して対象の一人に対して実行し、対象の反応を観察しなさい。※実行時の写真等を添付すること。
+            </div>
+
+            <!-- Aさんのフィードバック -->
+            <div class="feedback-section section-a">
+              <p class="feedback-title">インタビュー対象：Aさん（情報学部2年・男性）</p>
+              <img class="feedback-image" src="./img/iOS/フィードバック1.png" alt="Aさんのユーザーテスト" />
+            </div>
+
+            <!-- Dさんのフィードバック -->
+            <div class="feedback-section section-d">
+              <p class="feedback-title d">インタビュー対象：Dさん（社会人・女性）</p>
+              <div class="feedback-row">
+                <div class="feedback-half">
+                  <img class="feedback-image" src="./img/iOS/フィードバック2.png" alt="Dさんのユーザーテスト1" />
+                </div>
+                <div class="feedback-half">
+                  <img class="feedback-image" src="./img/iOS/フィードバック3.png" alt="Dさんのユーザーテスト2" />
+                </div>
+              </div>
+            </div>
+
+            <div class="content_txt txt01_2">
+              ③実行した対象から体験に対する評価を受けるとともに、コンセプトから評価までをストーリーで表現しなさい。小説、マンガ、動画等自由に。
+            </div>
+            <a class="video-link" href="https://youtu.be/CfXqzgvSImY" target="_blank">▶ 課題内容はこの動画に含まれています</a>
+
+            <div class="content_txt txt01_2">
+              ④課題がどこまで解決できたか、できなかった点とその理由をまとめなさい。この体験をビジネスに落とし込むにはさらにどんな実験データが必要か考えなさい。
+            </div>
+            <div class="report-section">
+              <h3>【解決できた点】</h3>
+              <p>
+                「大学生活に必要な情報を得るには、複数のアプリやサイトを使い分けなければならない。」という本質的な課題に対し、多くの側面で有効な解決策を提供できた。
+              </p>
+              <ul>
+                <li>
+                  <p class="highlight-underline">情報の一元管理</p>
+                  <br>UNIPA・シラバス・履修状況・課題管理・天気・電車・SNSなど、従来は複数のアプリやWebサイトをまたいで確認していた情報を、ひとつのアプリ内に統合。アクセス性が大きく向上した。
+                </li>
+                <li>
+                  <p class="highlight-underline">時間割と課題・テスト管理の連動</p>
+                  <br>時間割に紐づけて課題・テストを登録し、ToDoとして可視化することで、「いつ・どの科目で・何があるか」が瞬時に把握できるようになり、個別のメモ管理が不要になった。
+                </li>
+                <li>
+                  <p class="highlight-underline">単位進捗の可視化とシラバス検索の改善</p>
+                  <br>UNIPAの機能的な不便（別サイト遷移・検索の手間・手動管理）に対し、単位チェッカーとシラバス一括検索機能によって、履修計画と確認作業のストレスを軽減できた。
+                </li>
+                <li>
+                  <p class="highlight-underline">通学情報と天気・電車遅延情報の統合</p>
+                  <br>雨雲レーダーや遅延証明への直リンクなど、通学時に必要な情報を即座に取得可能とし、実用性の高い機能として貢献している。
+                </li>
+                <li>
+                  <p class="highlight-underline">課題の解決</p><br><span
+                    class="indent">実際に使用したユーザー（2名）からは、「今後も使いたい」「便利だった」といったポジティブな評価を得られた。</span>
+                </li>
+              </ul>
+
+              <h3>【解決できなかった／今後の課題】</h3>
+              <ul>
+                <li>
+                  <p class="highlight-underline">公式連携の欠如</p>
+                  <br>現在のアプリは、UNIPAや学内システムやLINE、Slackなどとの正式なAPI連携やデータ連携がされていないため、アプリをまたがないといけない場面は多々あり、自動化の点で限界がある。
+                </li>
+                <li>
+                  <p class="highlight-underline">スケーラビリティ（他大学対応）</p>
+                  <br>今回のアプリは特定大学向けに設計されており、他大学や学部への汎用性はまだ確保されていない。学習支援や単位要件は大学ごとに異なるため、ビジネス展開には拡張設計が必要となる。
+                </li>
+                <li>
+                  <p class="highlight-underline">ユーザー体験の検証不足</p>
+                  <br>開発者本人が使うには最適化されているが、他ユーザー（第三者）からのUI/UX評価・フィードバックはデータが2名のみであり、評価が主観的かつ限定的で信頼性に欠ける。
+                </li>
+                <li>
+                  <p class="highlight-underline">外部サービスへの依存</p><br><span
+                    class="indent">雨雲レーダー・電車乗換・遅延証明書・SNS・ChatGPTなどの機能は、Webコンテンツを埋め込む形で実装しており、商用化には利用規約や著作権の問題が伴う。これらをアプリ内で再利用するには権利元との契約または技術的代替が必要。</span>
+                </li>
+              </ul>
+
+              <h3>【ビジネスに落とし込むには？】</h3>
+              <ol>
+                <li>
+                  <p class="highlight-underline">外部サービス依存の排除と著作権・利用規約の遵守</p>
+                  <ul>
+                    <li>
+                      現状、雨雲レーダー・電車乗換・遅延証明・SNS・ChatGPTなどの機能は、外部のWebサイトやAPIをアプリに組み込んで表示している形式である。<br>これらの情報は多くが第三者の著作物やサービス規約の範囲内であり、個人利用は許されても、商用利用は規約違反または契約が必要になる場合が多い。
+                    </li>
+                    <li>よって、ビジネス展開に向けて下記のいずれかの対応が必須となる
+                      <ul>
+                        <li>正式な利用契約・APIライセンス契約の取得</li>
+                        <li>自作AIモデル・電車情報データベース・天気情報収集システム等の内製開発</li>
+                      </ul>
+                    </li>
+                    <li class="indent">
+                      例：ChatGPTをアプリに組み込む場合、OpenAIとのAPI契約・商用ライセンスが必要。<br>例：電車情報や遅延証明を提供するには、鉄道会社各社との個別連携・許諾が必須。</li>
+                  </ul>
+                </li>
+                <li>
+                  <p class="highlight-underline">ユーザー需要と実用性の定量データ</p>
+                  <ul>
+                    <li>各機能の利用頻度・便利さに関するアンケート調査（複数大学の学生対象）</li>
+                    <li>テスト導入後の「アプリ1つで生活がどれだけ効率化されたか」の行動ログ収集</li>
+                    <li>学生が本当に必要とする機能を明確化し、機能の取捨選択を行う</li>
+                  </ul>
+                </li>
+                <li>
+                  <p class="highlight-underline">教育機関との接続可能性と導入ハードルの調査</p>
+                  <ul>
+                    <li>UNIPA等の既存学内システムとの連携可能性（技術面・法務面）</li>
+                    <li>大学のセキュリティ要件、外部アプリの導入に関するガイドライン調査</li>
+                    <li>教育機関にとっての導入メリット提示（学生満足度向上、業務削減など）</li>
+                  </ul>
+                </li>
+                <li>
+                  <p class="highlight-underline">UI/UX・信頼性評価の実証</p>
+                  <ul>
+                    <li>他ユーザーによる試用とフィードバック収集</li>
+                    <li>情報の信頼性・整合性の担保（誤表示・遅延を避ける設計）</li>
+                    <li>視覚的な見やすさやナビゲーションの改善実験（A/Bテスト）</li>
+                  </ul>
+                </li>
+                <li>
+                  <p class="highlight-underline">スケーラビリティと汎用性の確保</p>
+                  <ul>
+                    <li>学部・学年・大学ごとの単位要件・時間割構成の差異に柔軟に対応する仕組みの開発</li>
+                    <li>個別カスタマイズが必要な部分と、共通化できるコア機能の切り分け</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="video" class="home_main_chapter">
+      <div id="c_04" class="chapter">
+        <div class="bg_common bg_example"></div>
+        <a onclick="showPopup4()">
+          <img src="./img/menu_card/背景_を_削除 プロジェクト.png" class="curve_animation" />
+        </a>
+      </div>
+      <div class="circle_number">EX</div>
+      <h1>作成したアプリ紹介動画</h1>
+    </div>
+
+    <div id="popup4" class="overlay" onclick="closePopup4()">
+      <div class="popup" onclick="event.stopPropagation()">
+        <h2 class="popup_menu_title">Video　</h2>
+        <h1>作成したアプリ紹介動画</h1>
+        <a class="close" onclick="closePopup4()">&times;</a>
+        <div class="content content4">
+          <div class="line"></div>
+          <div class="content_txt_4 youtube">
+            <li><i class="fa-brands fa-youtube"></i>サムネをクリックするとYoutubeのリンクに飛びます！</li>
+          </div>
+          <div class="row centered">
+            <div class="box_slack">
+              <a href="https://youtu.be/CfXqzgvSImY" class="thumbnail" target="_blank">
+                <img width="500" src="./img/youtube/単位情報 (1) (1).png" alt="Slackチャンネル作成動画" />
+              </a>
+              <h1>【「大学生活統合アプリ」〜すべての情報を一つに。管理ストレスをゼロへ。〜】</h1>
+              <p>この動画では、コンセプトから評価までを紹介します。</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <footer id="footer">
+    <div class="footer_square">
+      <p>生成AIを使用した箇所：動画の音声/サムネイル・画像生成（課題A-1、A-2、B-3）</p>
+    </div>
+  </footer>
+
+  </main>
+  <script type="text/javascript" src="js/script.min.js"></script>
+</body>
+
+</html>
